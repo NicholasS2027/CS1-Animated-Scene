@@ -25,16 +25,51 @@ body {
  height: 400px;
  margin: auto;
  border: 5px solid black;
- background-color: white;
+ background: url(https://images.squarespace-cdn.com/content/v1/5583d7ffe4b0db43b0a1118f/d7751075-44be-494a-aa63-664570f556fd/DESTROYED+CITY.jpg);
+ background-size: cover;
  overflow: hidden; /* contain objects "on-screen" */
 }
 
 #superman-flying {
     width: 80px;
     position: relative;
-    top: 50px;
+    top: 10px;
     left: 300px;
+    animation: flying 1s infinite linear;
 }
 
+#flame {
+    width: 90px;
+    position: relative;
+    left: 30px;
+}
 
+#large-flame {
+    width: 300px;
+    position: relative;
+    top: 140px;
+    left: 0px;
+}
 
+#flame-2 {
+    width: 100px;
+    position: relative;
+    top: 195px;
+    left: 120px;
+}
+
+#flame-3 {
+    width: 90px;
+    position: relative;
+    left: 190px;
+}
+
+@keyframes flying {
+    0% { transform: translate(0px,0px); }
+    20% { transform: translate(10px,20px); }
+    40% { transform: translate(30px,40px); }
+    60% { transform: translate(50px,60px); }
+    80% { transform: translate(70px,80px); }
+    100% { transform: translate(90px,100px); }
+}
+    
