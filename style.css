@@ -33,15 +33,16 @@ body {
 #superman-flying {
     width: 80px;
     position: relative;
-    top: 10px;
-    left: 300px;
-    animation: flying 1s infinite linear;
+    top: -10px;
+    left: 240px;
+    animation: flying 1.5s infinite linear;
 }
 
 #flame {
     width: 90px;
     position: relative;
     left: 30px;
+    animation: flame 3.5s infinite ease-in-out;
 }
 
 #large-flame {
@@ -56,20 +57,27 @@ body {
     position: relative;
     top: 195px;
     left: 120px;
+    animation: flame 2.5s infinite ease-in-out;
 }
 
 #flame-3 {
     width: 90px;
     position: relative;
     left: 190px;
+    animation: flame 1s infinite ease-in-out;
 }
 
 @keyframes flying {
-    0% { transform: translate(0px,0px); }
+    0% { transform: translate(0px,10px); }
     20% { transform: translate(10px,20px); }
     40% { transform: translate(30px,40px); }
     60% { transform: translate(50px,60px); }
     80% { transform: translate(70px,80px); }
     100% { transform: translate(90px,100px); }
 }
-    
+
+@keyframes flame {
+    0% {opacity: 0;}
+    50% {opacity: 1;}
+    100% {opacity: 0;}
+}
