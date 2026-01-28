@@ -33,9 +33,9 @@ body {
 #superman-flying {
     width: 80px;
     position: relative;
-    top: -10px;
-    left: 240px;
-    animation: flying 3.5s infinite linear;
+    top: 15px;
+    left: 250px;
+    animation: flying 2.5s infinite linear;
 }
 
 #flame {
@@ -70,9 +70,9 @@ body {
 #laser-eyes {
     width: 60px;
     top: -200px;
-    left: -25px;
+    left: -40px;
     position: relative;
-    animation: laser 2.5s infinite ease-in
+    animation: laser 2.5s infinite linear;
 }
 
 @keyframes flying {
@@ -91,11 +91,11 @@ body {
 }
 
 @keyframes laser {
-    0% { transform: translate(0px,10px); }   
-    50% { transform: translate(20px, 30px); } 
-    100% { transform: translate(40px, 50px); }
-    0% {opacity: 0; } 
-    50% {opacity: 1; }
-    100% { opacity: 0; }
+    0% { transform: translate(0px,10px); opacity: 0; }
+    20% { transform: translate(10px,20px); opacity: 0; }
+    40% { transform: translate(30px,40px); opacity: 0; }
+    60% { transform: translate(50px,60px); opacity: 1; }
+    80% { transform: translate(70px,80px); opacity: 1; }
+    100% { transform: translate(90px,100px); opacity: 0; }
    }
 
