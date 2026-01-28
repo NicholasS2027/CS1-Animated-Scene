@@ -35,7 +35,7 @@ body {
     position: relative;
     top: -10px;
     left: 240px;
-    animation: flying 1.5s infinite linear;
+    animation: flying 3.5s infinite linear;
 }
 
 #flame {
@@ -67,6 +67,14 @@ body {
     animation: flame 1s infinite ease-in-out;
 }
 
+#laser-eyes {
+    width: 60px;
+    top: -200px;
+    left: -25px;
+    position: relative;
+    animation: laser 2.5s infinite ease-in
+}
+
 @keyframes flying {
     0% { transform: translate(0px,10px); }
     20% { transform: translate(10px,20px); }
@@ -81,3 +89,13 @@ body {
     50% {opacity: 1;}
     100% {opacity: 0;}
 }
+
+@keyframes laser {
+    0% { transform: translate(0px,10px); }   
+    50% { transform: translate(20px, 30px); } 
+    100% { transform: translate(40px, 50px); }
+    0% {opacity: 0; } 
+    50% {opacity: 1; }
+    100% { opacity: 0; }
+   }
+
